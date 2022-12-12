@@ -1,0 +1,23 @@
+monster-card {
+	display: grid;
+}
+
+monster-card .link {
+	display: block;
+}
+
+monster-card.adopted {
+	border: 2px solid red;
+}
+
+monster-card.green {
+	border: 2px solid green;
+}
+
+monster-card.red {
+	border: 2px solid red;
+}
+
+monster-card.orange {
+	border: 2px solid orange;
+}

@@ -3,10 +3,16 @@
 
 <section>
 	<inner-column>
+
+		<%=monster.portrait%>
 		
-		<module-name>
-			<h1>Monster detail</h1>
-		</module-name>
+		<monster-detail>
+			<picture class='portrait'>
+				<img src="/images/monsters/<%=monster.portrait%>" alt="">
+			</picture>
+
+			<h1 class='loud-voice'><%=monster.name%></h1>
+		</monster-detail>
 
 	</inner-column>
 </section>

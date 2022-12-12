@@ -1,0 +1,8 @@
+
+monster-detail {
+	display: block;
+}
+
+monster-detail .portrait {
+	max-width: 400px;
+}

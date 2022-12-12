@@ -1,14 +1,26 @@
 [
 	{
 		"id": 0,
-		"name": "Bunchy"
+		"slug": "bunchy",
+		"name": "Bunchy",
+		"adopted": false,
+		"color": "green",
+		"portrait": "bunchy.png"
 	},
 	{
 		"id": 1,
-		"name": "Munchy"
+		"slug": "munchy",
+		"name": "Munchy",
+		"adopted": true,
+		"color": "orange",
+		"portrait": "munchy.png"
 	},
 	{
 		"id": 2,
-		"name": "Crunchy"
+		"slug": "crunchy",
+		"name": "Crunchy",
+		"adopted": false,
+		"color": "red",
+		"portrait": "crunchy.png"
 	}
 ]

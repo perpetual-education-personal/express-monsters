@@ -5,14 +5,12 @@
 	<inner-column>
 		
 		<module-name>
-			<h1>Monsters</h1>
+			<h1 class='loud-voice'>Monsters</h1>
 
 			<ul>
 				<% monsters.forEach( function(monster) { %>
 					<li>
-						<a href='#'>
-							<%= monster.name %>
-						</a>
+						<%- include('monster-card.ejs', {monster}) %>
 					</li>
 				<% }) %>
 			</ul>

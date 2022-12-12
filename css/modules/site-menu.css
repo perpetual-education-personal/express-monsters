@@ -1,0 +1,5 @@
+
+.site-menu ul {
+	display: flex;
+	flex-direction: row;
+}

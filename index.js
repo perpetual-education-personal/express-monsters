@@ -5,6 +5,12 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
+
+app.listen(1982, function() {
+	console.log("Server started at http://localhost:1982");
+});
+
+
 app.use( express.static('public') );
 app.use( express.static('css') );
 
@@ -18,17 +24,17 @@ app.get('/monsters', function(request, response) {
 	response.render('monsters', { monsters: monsterData });
 });
 
-app.get('/monster', function(request, response) {
-	response.render('detail');
+app.get('/monsters/:slug', function(request, response) {
+
+	const monster = monsterData.find( function(monster) {
+		return monster.slug == request.params.slug;
+	});
+
+	response.render('detail', { monster });
 });
 
 
 // If no route matches...
 app.use( function(request, response) {
 	response.status(404).render('404', { query: request.url });
-});
-
-
-app.listen(1982, function() {
-	console.log("Server started at http://localhost:1982");
 });
