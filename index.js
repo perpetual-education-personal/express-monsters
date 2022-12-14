@@ -6,11 +6,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 
-app.listen(1982, function() {
-	console.log("Server started at http://localhost:1982");
-});
-
-
+// Public asset folders
 app.use( express.static('public') );
 app.use( express.static('css') );
 
@@ -26,10 +22,12 @@ app.get('/monsters', function(request, response) {
 
 app.get('/monsters/:slug', function(request, response) {
 
+	console.log(request.params);
+
 	const monster = monsterData.find( function(monster) {
 		return monster.slug == request.params.slug;
 	});
-
+	console.log(monster);
 	response.render('detail', { monster });
 });
 
@@ -37,4 +35,10 @@ app.get('/monsters/:slug', function(request, response) {
 // If no route matches...
 app.use( function(request, response) {
 	response.status(404).render('404', { query: request.url });
+});
+
+
+// Start app
+app.listen(1982, function() {
+	console.log("Server started at http://localhost:1982");
 });
