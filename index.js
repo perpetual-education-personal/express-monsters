@@ -22,12 +22,9 @@ app.get('/monsters', function(request, response) {
 
 app.get('/monsters/:slug', function(request, response) {
 
-	console.log(request.params);
-
 	const monster = monsterData.find( function(monster) {
 		return monster.slug == request.params.slug;
 	});
-	console.log(monster);
 	response.render('detail', { monster });
 });
 
