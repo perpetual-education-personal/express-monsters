@@ -9,7 +9,8 @@
     "start:express": "npx nodemon",
     "build": "",
     "watch:sass": "sass --watch css/site.scss css/site-minified.css",
-    "start": "npm-run-all --parallel start:express watch:sass"
+    "dev": "npm-run-all --parallel start:express watch:sass",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
