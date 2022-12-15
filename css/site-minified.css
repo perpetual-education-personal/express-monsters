@@ -95,7 +95,7 @@ module-name, mast-head {
 
 /* S setings */
 html {
-  --black: blue;
+  --black: #111111;
   --white: #efefef;
   --neutral-stuffs: gray;
   --color: #9ec9eb;
