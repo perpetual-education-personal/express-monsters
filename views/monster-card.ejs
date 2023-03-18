@@ -9,6 +9,11 @@
 
 
 <monster-card class="<%=adoptedStyle()%> <%=monster.color%>">
+
+	<picture>
+		<img src="<%=monster.portrait%>" alt="">
+	</picture>
+
 	<h2 class='attention-voice'><%= monster.name %></h2>
 
 	<% if (monster.adopted) { %>

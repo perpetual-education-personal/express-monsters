@@ -221,23 +221,30 @@ code {
 monster-card {
   display: grid;
 }
-
+monster-card picture {
+  aspect-ratio: 1/1;
+  max-width: 300px;
+}
+monster-card picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 monster-card .link {
   display: block;
 }
-
 monster-card.adopted {
   border: 2px solid red;
 }
-
-monster-card.green {
-  border: 2px solid green;
+monster-card.lime {
+  border: 2px solid lime;
 }
-
+monster-card.blue {
+  border: 2px solid blue;
+}
 monster-card.red {
   border: 2px solid red;
 }
-
 monster-card.orange {
   border: 2px solid orange;
 }

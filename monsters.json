@@ -3,7 +3,6 @@
 		"id": 0,
 		"slug": "bunchy",
 		"name": "Bunchy",
-		"adopted": false,
 		"color": "green",
 		"portrait": "bunchy.png"
 	},
@@ -19,7 +18,6 @@
 		"id": 2,
 		"slug": "crunchy",
 		"name": "Crunchy",
-		"adopted": false,
 		"color": "red",
 		"portrait": "crunchy.png"
 	}

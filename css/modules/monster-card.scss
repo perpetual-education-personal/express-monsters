@@ -1,23 +1,38 @@
 monster-card {
 	display: grid;
-}
 
-monster-card .link {
-	display: block;
-}
+	picture {
+		aspect-ratio: 1 / 1;
+		max-width: 300px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 
-monster-card.adopted {
-	border: 2px solid red;
-}
+	.link {
+		display: block;
+	}
 
-monster-card.green {
-	border: 2px solid green;
-}
+	&.adopted {
+		border: 2px solid red;
+	}
 
-monster-card.red {
-	border: 2px solid red;
-}
+	&.lime {
+		border: 2px solid lime;
+	}
 
-monster-card.orange {
-	border: 2px solid orange;
+	&.blue {
+		border: 2px solid blue;
+	}
+
+	&.red {
+		border: 2px solid red;
+	}
+
+	&.orange {
+		border: 2px solid orange;
+	}
+
 }
