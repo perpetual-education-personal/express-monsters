@@ -48,6 +48,8 @@ app.get('/', function(request, response) {
 
 
 
+
+
 app.get('/products', async function(request, response) {
 	const products = await prismicClient.getAllByType('product');
 
