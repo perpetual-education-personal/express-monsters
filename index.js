@@ -103,7 +103,7 @@ app.use( function(request, response) {
 
 
 // Start app
-app.listen(process.env.PORT, function() {
+app.listen(process.env.PORT || 1982, function() {
 	console.log("Server started at http://localhost:1982");
 });
 
