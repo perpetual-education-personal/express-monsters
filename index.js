@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url'
 import * as prismicH from '@prismicio/helpers'
 import { client as prismicClient } from './config/prismicConfig.js'
 
-
+const PORT = 1982;
 
 // import contentful from 'contentful';
 
@@ -105,6 +105,20 @@ app.use( function(request, response) {
 
 
 // Start app
-app.listen(1982, function() {
+app.listen(PORT, function() {
 	console.log("Server started at http://localhost:1982");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
