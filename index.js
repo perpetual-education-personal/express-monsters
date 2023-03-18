@@ -18,6 +18,8 @@ import { client as prismicClient } from './config/prismicConfig.js'
 
 dotenv.config()
 
+const port = process.env.PORT || 1982;
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -105,7 +107,7 @@ app.use( function(request, response) {
 
 
 // Start app
-app.listen(process.env.PORT || 1982, function() {
+app.listen(port, function() {
 	console.log("Server started at http://localhost:1982");
 });
 
