@@ -16,7 +16,7 @@ import { client as prismicClient } from './config/prismicConfig.js'
 //   accessToken: 'qo2CFiuKeIkYyUD6lUM0302dAeo2EoG_MayfVfOCySo'
 // })
 
-
+dotenv.config()
 
 const app = express();
 
