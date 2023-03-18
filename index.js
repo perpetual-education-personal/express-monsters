@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url'
 import * as prismicH from '@prismicio/helpers'
 import { client as prismicClient } from './config/prismicConfig.js'
 
-const PORT = 1982;
+const PORT = process.env.PORT || 1982;
 
 // import contentful from 'contentful';
 
