@@ -1,0 +1,29 @@
+<%- include('header.ejs'); %>
+
+
+<section>
+	<inner-column>
+
+		<module-name>
+			<h1 class='loud-voice'>Products</h1>
+
+			<ul>
+				<% products.forEach( function(product) { %>
+
+					<li>
+						<h2><%- ctx.prismicH.asText(product.data.name) %></h2>
+
+						<a href="/products/<%=product.uid%>">
+							<%=product.uid%>		
+						</a>
+					</li>
+
+				<% }); %>
+			</ul>
+		</module-name>
+
+	</inner-column>
+</section>
+
+
+<%- include('footer.ejs') %>

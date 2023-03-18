@@ -1,0 +1,17 @@
+<%- include('header.ejs'); %>
+
+
+<section>
+	<inner-column>
+
+		<p><%=specificProduct.uid%></p>
+
+		<h1 class='loud-voice'><%- ctx.prismicH.asText(specificProduct.data.name) %></h1>
+
+		<%- ctx.prismicH.asHTML(specificProduct.data.description) %>
+
+	</inner-column>
+</section>
+
+
+<%- include('footer.ejs'); %>
